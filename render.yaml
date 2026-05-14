@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: css-text-portrait-builder
+    runtime: static
+    buildCommand: pnpm install && pnpm build
+    publishDirectory: dist
+    envVars:
+      - key: PNPM_VERSION
+        value: 9.15.9
