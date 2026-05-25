@@ -1,37 +1,27 @@
-/**
- * base.scss
- */
 @import url('npm:normalize.css');
 
 html,
-body,
-p {
+body {
   overflow: hidden;
-  overflow-anchor: none;
+  margin: 0;
+  height: 100%;
 }
 
 body {
-  background-color: $black;
+  background: #000;
+  position: relative;
 }
 
-body,
-p {
-  margin: 0;
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: url('../img/bg.jpg') center / cover no-repeat;
+  opacity: 0.1;
 }
 
-p {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: transparent;
-  background-clip: text;
-  background-image: $subject-image;
-  filter: brightness($brigthness) grayscale($grayscale) invert($invert);
-  font-family: $inter;
-  font-size: $regular;
-  line-height: $regular;
-  text-align: justify;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
 }

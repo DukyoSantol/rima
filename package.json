@@ -25,22 +25,13 @@
     "postexport": "pnpm compress && echo \n\u001b[32m\u001b[1mExport complete.",
     "compress": "cd dist/ && bestzip export.zip *"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/WarenGonzaga/css-text-portrait-builder.git"
-  },
   "keywords": [
     "css",
     "text",
     "portrait",
     "builder"
   ],
-  "author": "Waren Gonzaga",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/WarenGonzaga/css-text-portrait-builder/issues"
-  },
-  "homepage": "https://github.com/WarenGonzaga/css-text-portrait-builder#readme",
   "dependencies": {
     "jsdom": "^29.0.1",
     "normalize.css": "^8.0.1"
